@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+main {
+  height: 100%;
+}
+
+.clickable-button {
+  &.active {
+    background: white;
+    color: white;
+    background-color: rgba(#3498db, 0.8);
+    svg {
+      color: white;
+    }
+  }
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 5px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover:active {
+    opacity: 0.2;
+  }
+}
